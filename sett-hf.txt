@@ -21,6 +21,9 @@ npm install --save react-router-dom
 npm install react-iframe --save
 
 
+GitBash:
+heroku buildpacks:set heroku/nodejs
+
 npm i react-reveal --save анимация
 
 react transition group (анимация):
