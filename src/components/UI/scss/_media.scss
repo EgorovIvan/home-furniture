@@ -1,0 +1,488 @@
+
+
+//@media (max-width: 1700px) {
+//  .contact-slider {
+//    &__img {
+//      width: 100%;
+//    }
+//  }
+//}
+//
+//@media (max-width: 1366px) {
+//  .collection {
+//    grid-template-columns: repeat(3, 1fr);
+//
+//    &__images {
+//      width: 100%;
+//    }
+//  }
+//  .map {
+//    margin-top: 0;
+//  }
+//}
+//
+//@media (max-width: 1200px) {
+//  .top {
+//    &__slider-title {
+//      font-size: 62px;
+//      line-height: 74px;
+//    }
+//
+//    &__slider-img {
+//      height: 640px;
+//    }
+//  }
+//  .contact-slider {
+//    &__img {
+//      height: 240px;
+//    }
+//  }
+//}
+//
+//@media (max-width: 1040px) {
+//  .blog {
+//    &__inner {
+//      flex-wrap: wrap;
+//    }
+//
+//    &__items {
+//      max-width: 100%;
+//    }
+//
+//    &__item-img {
+//      max-width: 100%;
+//      width: 100%;
+//    }
+//  }
+//  .aside {
+//    width: 100%;
+//    margin-left: 0;
+//    order: -1;
+//    margin-bottom: 50px;
+//  }
+//}
+//
+//@media (max-width: 990px) {
+//  .footer {
+//    &__info {
+//      width: 380px;
+//    }
+//  }
+//  .gallery {
+//    &__items {
+//      grid-gap: 10px;
+//    }
+//
+//    &__btn {
+//      margin: 0;
+//      padding: 6px 10px;
+//    }
+//  }
+//  .about {
+//    &__text {
+//      padding-left: 0;
+//    }
+//
+//    &__content {
+//      padding: 40px 0;
+//    }
+//  }
+//}
+//
+//@media (max-width: 840px) {
+//  .top {
+//    &__inner {
+//      &::after {
+//        height: 100%;
+//      }
+//    }
+//
+//    &__slider-title {
+//      font-size: 44px;
+//      line-height: 54px;
+//    }
+//
+//    &__slider-img {
+//      height: 540px;
+//    }
+//  }
+//  .collection {
+//    grid-template-columns: repeat(2, 1fr);
+//  }
+//  .works-path {
+//    &__item {
+//      width: 350px;
+//    }
+//
+//    &__item--production {
+//      margin-left: 50px;
+//    }
+//  }
+//  .contact {
+//    .contact__social,
+//    &__box,
+//    &__form {
+//      padding-left: 0;
+//    }
+//  }
+//}
+//
+//
+//@media (max-width: 768px) {
+//  .header {
+//    &__btn {
+//      display: none;
+//    }
+//  }
+//  .menu {
+//    &__list-item {
+//      padding-left: 0;
+//
+//      & + .menu__list-item {
+//        padding-right: 0;
+//      }
+//    }
+//  }
+//  .logo {
+//    margin: 0;
+//  }
+//  .footer {
+//    &__inner {
+//      flex-wrap: wrap;
+//      justify-content: center;
+//    }
+//
+//    &__info {
+//      width: 100%;
+//      margin-bottom: 50px;
+//    }
+//
+//    &_info-text {
+//      max-width: 100%;
+//    }
+//
+//    &__menu {
+//      margin-left: auto;
+//      margin-right: auto;
+//    }
+//
+//    &__social {
+//      margin-left: auto;
+//      margin-right: auto;
+//    }
+//  }
+//  .decor {
+//    padding: 70px 0 55px;
+//  }
+//  .works-path {
+//    &__item--measuring {
+//      margin-left: 100px;
+//    }
+//  }
+//  .gallery {
+//    &__buttons {
+//      display: grid;
+//    }
+//
+//    &__btn {
+//      margin-bottom: 10px;
+//    }
+//  }
+//  .about {
+//    &__prev {
+//      padding: 80px 0;
+//    }
+//  }
+//  .inspiration {
+//    &__images {
+//      display: none;
+//    }
+//  }
+//  .partners {
+//    &__items {
+//      grid-template-columns: repeat(3, 1fr);
+//    }
+//  }
+//  .map {
+//    iframe {
+//      height: 375px;
+//    }
+//  }
+//}
+//
+//@media (max-width: 650px) {
+//  .top {
+//    &__inner {
+//      padding-top: 30px;
+//      padding-bottom: 25px;
+//    }
+//
+//    &__slider-item {
+//      .top__slider-img {
+//        display: none;
+//      }
+//    }
+//
+//    &__slider-text {
+//      margin-bottom: 15px;
+//    }
+//  }
+//  .works-path {
+//    &__items-box::before,
+//    &__item--production::after,
+//    &__item--measuring::before {
+//      display: none;
+//    }
+//
+//    &__items-box {
+//      border: none;
+//      flex-wrap: wrap;
+//    }
+//
+//    &__item--measuring {
+//      margin-left: 0;
+//      padding-top: 0;
+//      padding-bottom: 38px;
+//    }
+//
+//    &__item--production {
+//      margin-left: 0;
+//      order: 1;
+//    }
+//
+//    &__item {
+//      width: 100%;
+//    }
+//  }
+//  .blog-box {
+//    &__items {
+//      display: block;
+//    }
+//
+//    &__img-link {
+//      display: block;
+//    }
+//
+//    &__img {
+//      width: 100%;
+//    }
+//
+//    &__item {
+//      margin-bottom: 20px;
+//    }
+//  }
+//  .contact {
+//    &__form-input {
+//      width: 100%;
+//    }
+//  }
+//  .slick-dots li {
+//    margin: 0 5px;
+//  }
+//}
+//
+//@media (max-width: 540px) {
+//  .menu__list-link--active::after {
+//    display: none;
+//  }
+//  .logo {
+//    order: -1;
+//    position: relative;
+//    z-index: 12;
+//  }
+//  .header {
+//    &__inner {
+//      flex-wrap: wrap;
+//      padding-top: 42px;
+//    }
+//
+//    &__btn-menu {
+//      display: block;
+//      background-color: transparent;
+//      border: none;
+//      cursor: pointer;
+//      order: -1;
+//      position: relative;
+//      z-index: 12;
+//
+//      span {
+//        background-color: #000000;
+//        width: 37px;
+//        height: 3px;
+//        border-radius: 4px;
+//        display: block;
+//        margin: 6px 0;
+//      }
+//    }
+//  }
+//
+//  .menu {
+//    padding-right: 0;
+//    width: 100%;
+//    background-color: #fff;
+//    position: relative;
+//    text-align: center;
+//    z-index: 11;
+//    transform: translateY(-350px);
+//    transition: all .5s;
+//
+//    &--open {
+//      transform: translateY(30px);
+//    }
+//
+//    &__list {
+//      display: block;
+//    }
+//
+//    &__list-item {
+//      padding-right: 0;
+//    }
+//
+//    &__list-link {
+//      display: block;
+//      padding: 15px 0;
+//    }
+//  }
+//  .collection {
+//    grid-template-columns: repeat(1, 1fr);
+//  }
+//  %title-font {
+//    font-size: 28px;
+//    line-height: 36px;
+//  }
+//  .blog-box {
+//    &__item-title {
+//      font-size: 22px;
+//      line-height: 36px;
+//    }
+//  }
+//
+//  .about {
+//    &__prev-title {
+//      font-size: 40px;
+//      line-height: 48px;
+//    }
+//  }
+//
+//  .blog__category-title,
+//  .resent-posts__title,
+//  .blog__tags-title,
+//  .blog__blockquote-author{
+//    font-size: 16px;
+//    line-height: 23px;
+//  }
+//  .blog{
+//    &__item-title{
+//      font-size: 24px;
+//      line-height: 38px;
+//    }
+//  }
+//
+//  .blog-one{
+//    &__links{
+//      padding: 30px 0;
+//    }
+//    &__link{
+//      span{
+//        display: none;
+//      }
+//    }
+//    &__form-input{
+//      width: 100%;
+//    }
+//    &__comments-name,
+//            &__form-title{
+//      font-size: 16px;
+//      line-height: 27px;
+//    }
+//    &__comments-item{
+//      flex-wrap: wrap;
+//    }
+//    &__comments-avatar{
+//      width: 45px;
+//      height: 45px;
+//    }
+//    &__comments-name,
+//    &__comments-date{
+//      margin-left: 55px;
+//    }
+//    &__comments-info{
+//      margin-top: -46px;
+//    }
+//    &__reply{
+//      margin-left: 0;
+//    }
+//  }
+//
+//
+//  .works-path {
+//    &__item-title {
+//      font-size: 16px;
+//      line-height: 27px;
+//    }
+//  }
+//
+//  .gallery {
+//    &__items {
+//      grid-template-columns: repeat(1, 1fr);
+//    }
+//
+//    &__item:first-child {
+//      grid-column: 1;
+//      grid-row: 1;
+//    }
+//
+//    &.gallery-page {
+//      .gallery__item:nth-child(8) {
+//        grid-column: 1;
+//        grid-row: 1;
+//      }
+//    }
+//  }
+//
+//  .inspiration {
+//    &__item-text,
+//    &__numb {
+//      font-size: 16px;
+//      line-height: 23px;
+//    }
+//
+//    &__item-text {
+//      margin-right: 10px;
+//    }
+//  }
+//
+//}
+//
+//@media (max-width: 375px) {
+//  .footer {
+//    &__inner {
+//      justify-content: space-between;
+//    }
+//
+//    &__social {
+//      margin-left: 0;
+//    }
+//
+//    &__form {
+//      display: block;
+//    }
+//
+//    &__form-button {
+//      width: 100%;
+//      margin-left: 0;
+//      margin-top: 10px;
+//    }
+//  }
+//  .contact-slider {
+//    &__img {
+//      height: 310px;
+//    }
+//  }
+//  .slick-dots li {
+//    margin: 0 5px;
+//  }
+//  .blog-one__item blockquote{
+//    padding: 0 20px;
+//  }
+//}

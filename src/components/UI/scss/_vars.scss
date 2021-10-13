@@ -1,0 +1,19 @@
+$title: #363838;
+$default: #5A5A5A;
+
+%title-font-thin {
+  font-family: 'Aeroport', sans-serif;
+  font-weight: 300;
+}
+
+%title-font {
+  font-family: 'Aeroport', sans-serif;
+  font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

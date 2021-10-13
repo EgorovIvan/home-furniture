@@ -1,0 +1,37 @@
+npm install -g create-react-app
+npx create-react-app hf 
+cd hf
+npm start
+
+	
+npm install --global gulp
+npm install gulp --save-dev
+
+npm install jquery
+
+npm install react-responsive-carousel --save
+
+npm install react-slick --save
+npm install slick-carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+npm install --save react-router-dom
+
+npm install react-iframe --save
+
+
+npm i react-reveal --save анимация
+
+react transition group (анимация):
+npm install react-transition-group --save
+npm install react-bootstrap
+
+npm i swiper react-id-swiper (слайдеры) не работает / для native
+
+npm cache clear --force  не обязательно
+npm install sass       не обязательно
+
+ресурсы:
+
+https://prognote.ru/web-dev/front-end/infinite-slider-in-react-js/  - слайды
