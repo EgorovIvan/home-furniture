@@ -15,7 +15,7 @@ function Footer() {
                                     МАГАЗИН МЕБЕЛИ ДЛЯ ДОМА
                                 </p>
                                 <p className="footer__info-number">
-                                    +7 (906) 121-68-99
+                                    +7 (963) 972-11-95
                                 </p>
                                 <a className="info-email" href="mailto:ouremailaddress@email.com">
                                     company_email_address@email.com

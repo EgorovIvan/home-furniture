@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "title": "Кухонный стол №1",
+    "size": "120х60х100",
+    "material": "дуб",
+    "color": "коричневый",
+    "image": "./../../images/catalog/Столы/стол_1.jpg",
+    "price": 710,
+    "rating": 3
+  },
+  {
+    "id": 1,
+    "title": "Журнальный стол №1",
+    "size": "80х60х80",
+    "material": "береза",
+    "color": "белый",
+    "image": "./../../images/catalog/Столы/стол_2.jpg",
+    "price": 415,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "title": "Кухонный стол №2",
+    "size": "120х60х100",
+    "material": "дуб",
+    "color": "Черно-белый",
+    "image": "./../../images/catalog/Столы/стол_3.jpg",
+    "price": 464,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "Журнальный стол №2",
+    "size": "120х60х100",
+    "material": "дуб",
+    "color": "Белый",
+    "image": "./../../images/catalog/Столы/стол_4.jpg",
+    "price": 741,
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "title": "Кухонный стол №3",
+    "size": "120х60х100",
+    "material": "дуб",
+    "color": "коричневый",
+    "image": "./../../images/catalog/Столы/стол_5.jpg",
+    "price": 710,
+    "rating": 3
+  },
+  {
+    "id": 5,
+    "title": "Журнальный стол №3",
+    "size": "80х60х80",
+    "material": "береза",
+    "color": "белый",
+    "image": "./../../images/catalog/Столы/стол_6.jpg",
+    "price": 415,
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "title": "Кухонный стол №4",
+    "size": "120х60х100",
+    "material": "дуб",
+    "color": "Черно-белый",
+    "image": "./../../images/catalog/Столы/стол_7.jpg",
+    "price": 464,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "title": "Кухонный стол №5",
+    "size": "80х60х80",
+    "material": "береза",
+    "color": "Белый",
+    "image": "./../../images/catalog/Столы/стол_8.jpg",
+    "price": 741,
+    "rating": 3
+  }
+]

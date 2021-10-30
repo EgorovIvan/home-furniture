@@ -20,6 +20,12 @@ npm install --save react-router-dom
 
 npm install react-iframe --save
 
+npm install @mui/material @emotion/react @emotion/styled
+
+REDUX:
+npm install redux react-redux redux-logger redux-thunk
+npm i --save lodash
+
 
 GitBash:
 heroku buildpacks:set heroku/nodejs
