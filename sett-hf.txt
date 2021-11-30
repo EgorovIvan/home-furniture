@@ -31,7 +31,10 @@ npm install -g requirejs
 npm install socket.io --save
 npm i socket.io-client --save
 
-npm install --save-dev nodemon //после изменений на сервере сам его перезапускает
+npm install express
+npm install mongoose
+npm install -D nodemon concurrently
+
 
 GitBash:
 heroku buildpacks:set heroku/nodejs
