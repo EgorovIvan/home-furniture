@@ -52,3 +52,5 @@ npm install sass       не обязательно
 
 https://prognote.ru/web-dev/front-end/infinite-slider-in-react-js/  - слайды
 https://ant.design/
+
+"server": "nodemon server.js",
