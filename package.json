@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
-    "@mui/material": "^5.0.6",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "^5.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.23.0",
     "bootstrap": "^5.1.1",
+    "css-minify": "^2.0.0",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "node-sass": "^6.0.1",
@@ -20,6 +23,7 @@
     "react-dom": "^17.0.2",
     "react-id-swiper": "^4.0.0",
     "react-iframe": "^1.8.0",
+    "react-mixitup": "^2.3.0",
     "react-redux": "^7.2.5",
     "react-responsive-carousel": "^3.2.21",
     "react-reveal": "^1.2.2",
@@ -35,6 +39,8 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.4",
     "slick-carousel": "^1.8.1",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.3.2",
     "swiper": "^7.0.6",
     "web-vitals": "^1.0.1"
   },
@@ -42,7 +48,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +57,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -63,6 +71,8 @@
     ]
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "mixitup": "^3.3.1",
+    "nodemon": "^2.0.14"
   }
 }

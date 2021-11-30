@@ -1,15 +1,30 @@
-$title: #363838;
+$title: rgba(54, 56, 56, 0.9);
 $default: #5A5A5A;
 
-%title-font-thin {
-  font-family: 'Aeroport', sans-serif;
-  font-weight: 300;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+%title-font-ml {
+  font-family: 'Ropa Sans', sans-serif;
+  font-weight: 400;
 }
 
-%title-font {
-  font-family: 'Aeroport', sans-serif;
+%title-font-js4i {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+%title-font-js {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+%title-font-js7 {
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
 }
+
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

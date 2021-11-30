@@ -1,0 +1,13 @@
+
+[
+  {
+    "id": 0,
+    "title": "Светильник",
+    "size": "100",
+    "material": "металл",
+    "color": "черный",
+    "image": "/images/catalog/Other/other_1.jpg",
+    "price": 240,
+    "in_stock": 1
+  }
+]

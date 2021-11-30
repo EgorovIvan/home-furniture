@@ -4,7 +4,7 @@ import {Button, Container, ListGroup} from "react-bootstrap";
 import {CSSTransition} from "react-transition-group";
 import Leftmenu from "./Leftmenu";
 
-function ListButton() {
+const ListButton = () => {
     const [showMessage, setShowMessage] = useState(false);
     return (
         <Container>

@@ -3,7 +3,7 @@ const initialState = {
     ]
 };
 
-export default (state = initialState, action) => {
+export default (state = initialState, action) =>  {
     switch (action.type) {
         case 'ADD_PRODUCT_TO_CART' :
             return {
@@ -18,7 +18,6 @@ export default (state = initialState, action) => {
                 ...state,
                 items: state.items.filter(o => o.id !== action.payload)
             }
-            break;
         default:
             return state;
     }

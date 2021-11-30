@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 0,
+    "title": "Мангал №1",
+    "size": "100х100х50",
+    "material": "металл",
+    "color": "черный",
+    "image": "/images/catalog/Braziers/brazier_1.jpg",
+    "price": 240,
+    "in_stock": 1
+  },
+  {
+    "id": 1,
+    "title": "Мангал №2",
+    "size": "100х100х50",
+    "material": "металл",
+    "color": "серый",
+    "image": "/images/catalog/Braziers/brazier_2.jpg",
+    "price": 350,
+    "in_stock": 0
+  },
+  {
+    "id": 2,
+    "title": "Мангал №3",
+    "size": "100х100х50",
+    "material": "металл",
+    "color": "черный",
+    "image": "/images/catalog/Braziers/brazier_3.jpg",
+    "price": 320,
+    "in_stock": 0
+  },
+  {
+    "id": 3,
+    "title": "Мангал №4",
+    "size": "100х100х50",
+    "material": "металл",
+    "color": "серый",
+    "image": "/images/catalog/Braziers/brazier_4.jpg",
+    "price": 290,
+    "in_stock": 0
+  }
+]

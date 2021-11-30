@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 0,
+    "title": "Стул №1",
+    "size": "120х60х60",
+    "material": "дуб",
+    "color": "коричневый",
+    "image": "/images/catalog/Chairs/chair_1.jpg",
+    "price": 240,
+    "in_stock": 0
+  },
+  {
+    "id": 1,
+    "title": "Стул №2",
+    "size": "80х60х60",
+    "material": "береза",
+    "color": "синий",
+    "image": "/images/catalog/Chairs/chair_2.jpg",
+    "price": 350,
+    "in_stock": 1
+  },
+  {
+    "id": 2,
+    "title": "Стул №3",
+    "size": "120х60х60",
+    "material": "дуб",
+    "color": "серый",
+    "image": "/images/catalog/Chairs/chair_3.jpg",
+    "price": 320,
+    "in_stock": 0
+  },
+  {
+    "id": 3,
+    "title": "Стул №4",
+    "size": "120х60х50",
+    "material": "дуб",
+    "color": "белый",
+    "image": "/images/catalog/Chairs/chair_4.jpg",
+    "price": 290,
+    "in_stock": 1
+  },
+  {
+    "id": 4,
+    "title": "Стул №5",
+    "size": "120х60х60",
+    "material": "дуб",
+    "color": "коричневый",
+    "image": "/images/catalog/Chairs/chair_5.jpg",
+    "price": 270,
+    "in_stock": 3
+  },
+  {
+    "id": 5,
+    "title": "Стул №6",
+    "size": "80х60х80",
+    "material": "береза",
+    "color": "белый",
+    "image": "/images/catalog/Chairs/chair_6.jpg",
+    "price": 330,
+    "in_stock": 1
+  },
+  {
+    "id": 6,
+    "title": "Стул №7",
+    "size": "120х60х60",
+    "material": "дуб",
+    "color": "черно-белый",
+    "image": "/images/catalog/Chairs/chair_7.jpg",
+    "price": 550,
+    "in_stock": 0
+  },
+  {
+    "id": 7,
+    "title": "А-Стул №1",
+    "size": "80х60х80",
+    "material": "береза",
+    "color": "белый",
+    "image": "/images/catalog/Chairs/chair_8.jpg",
+    "price": 410,
+    "in_stock": 0
+  }
+]

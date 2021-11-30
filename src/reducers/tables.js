@@ -10,7 +10,6 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 items: action.payload,
-
                 isReady: true,
             };
         case 'SET_IS_READY':
@@ -18,7 +17,6 @@ export default (state = initialState, action) => {
                 ...state,
                 isReady: action.payload
             }
-            break;
         default:
             return state;
     }

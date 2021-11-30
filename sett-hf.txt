@@ -26,11 +26,18 @@ REDUX:
 npm install redux react-redux redux-logger redux-thunk
 npm i --save lodash
 
+Server:
+npm install -g requirejs
+npm install socket.io --save
+npm i socket.io-client --save
+
+npm install --save-dev nodemon //после изменений на сервере сам его перезапускает
 
 GitBash:
 heroku buildpacks:set heroku/nodejs
 
 npm i react-reveal --save анимация
+npm install react-reveal --save
 
 react transition group (анимация):
 npm install react-transition-group --save
@@ -44,3 +51,4 @@ npm install sass       не обязательно
 ресурсы:
 
 https://prognote.ru/web-dev/front-end/infinite-slider-in-react-js/  - слайды
+https://ant.design/

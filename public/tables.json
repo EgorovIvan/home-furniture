@@ -1,3 +1,4 @@
+
 [
   {
     "id": 0,
@@ -5,9 +6,9 @@
     "size": "120х60х100",
     "material": "дуб",
     "color": "коричневый",
-    "image": "./../../images/catalog/Столы/стол_1.jpg",
+    "image": "/images/catalog/Tables/table_1.jpg",
     "price": 710,
-    "rating": 3
+    "in_stock": 0
   },
   {
     "id": 1,
@@ -15,9 +16,9 @@
     "size": "80х60х80",
     "material": "береза",
     "color": "белый",
-    "image": "./../../images/catalog/Столы/стол_2.jpg",
+    "image": "/images/catalog/Tables/table_2.jpg",
     "price": 415,
-    "rating": 5
+    "in_stock": 6
   },
   {
     "id": 2,
@@ -25,9 +26,9 @@
     "size": "120х60х100",
     "material": "дуб",
     "color": "Черно-белый",
-    "image": "./../../images/catalog/Столы/стол_3.jpg",
+    "image": "/images/catalog/Tables/table_3.jpg",
     "price": 464,
-    "rating": 4
+    "in_stock": 4
   },
   {
     "id": 3,
@@ -35,9 +36,9 @@
     "size": "120х60х100",
     "material": "дуб",
     "color": "Белый",
-    "image": "./../../images/catalog/Столы/стол_4.jpg",
+    "image": "/images/catalog/Tables/table_4.jpg",
     "price": 741,
-    "rating": 3
+    "in_stock": 3
   },
   {
     "id": 4,
@@ -45,9 +46,9 @@
     "size": "120х60х100",
     "material": "дуб",
     "color": "коричневый",
-    "image": "./../../images/catalog/Столы/стол_5.jpg",
+    "image": "/images/catalog/Tables/table_5.jpg",
     "price": 710,
-    "rating": 3
+    "in_stock": 0
   },
   {
     "id": 5,
@@ -55,9 +56,9 @@
     "size": "80х60х80",
     "material": "береза",
     "color": "белый",
-    "image": "./../../images/catalog/Столы/стол_6.jpg",
+    "image": "/images/catalog/Tables/table_6.jpg",
     "price": 415,
-    "rating": 5
+    "in_stock": 5
   },
   {
     "id": 6,
@@ -65,9 +66,9 @@
     "size": "120х60х100",
     "material": "дуб",
     "color": "Черно-белый",
-    "image": "./../../images/catalog/Столы/стол_7.jpg",
+    "image": "/images/catalog/Tables/table_7.jpg",
     "price": 464,
-    "rating": 4
+    "in_stock": 4
   },
   {
     "id": 7,
@@ -75,8 +76,8 @@
     "size": "80х60х80",
     "material": "береза",
     "color": "Белый",
-    "image": "./../../images/catalog/Столы/стол_8.jpg",
+    "image": "/images/catalog/Tables/table_8.jpg",
     "price": 741,
-    "rating": 3
+    "in_stock": 3
   }
 ]

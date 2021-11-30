@@ -12,9 +12,7 @@ function Main() {
                 <div className="container">
                     <section className="top">
                         <div className="top__inner">
-
                             <TopSlider />
-
                         </div>
                     </section>
                     <section className="new-products">
@@ -22,14 +20,9 @@ function Main() {
                             Новая продукция
                         </h3>
                         <div className="wrapper-products">
-
                             <ProductSlider />
-
                         </div>
-
-
                     </section>
-
                 </div>
             </main>
         </div>

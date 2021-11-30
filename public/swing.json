@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 0,
+    "title": "Качели №1",
+    "size": "240х200х140",
+    "material": "металл",
+    "color": "зеленый",
+    "image": "/images/catalog/Swing/swing_1.jpg",
+    "price": 240,
+    "in_stock": 0
+  },
+  {
+    "id": 1,
+    "title": "Качели №2",
+    "size": "240х200х140",
+    "material": "металл",
+    "color": "зеленый",
+    "image": "/images/catalog/Swing/swing_2.jpg",
+    "price": 350,
+    "in_stock": 1
+  },
+  {
+    "id": 2,
+    "title": "Качели №3",
+    "size": "240х200х140",
+    "material": "металл",
+    "color": "серый",
+    "image": "/images/catalog/Swing/swing_3.jpg",
+    "price": 320,
+    "in_stock": 0
+  },
+  {
+    "id": 3,
+    "title": "Качели №4",
+    "size": "240х200х140",
+    "material": "металл",
+    "color": "бежевый",
+    "image": "/images/catalog/Swing/swing_4.jpg",
+    "price": 290,
+    "in_stock": 1
+  }
+]

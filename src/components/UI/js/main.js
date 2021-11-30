@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import mixitup from "mixitup";
+
 
 $(function () {
     $('.header__btn-menu').on('click', function () {
@@ -110,7 +113,7 @@ $(function () {
     });
 
 
-    var containerEl = document.querySelector('.gallery__inner');
+    var containerEl = document.querySelector(".gallery__inner");
     var mixer;
 
     if (containerEl)
@@ -119,6 +122,7 @@ $(function () {
                 filter: '.living'
             }
         });
+
 
 
 })
