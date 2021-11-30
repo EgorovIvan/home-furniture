@@ -57,3 +57,9 @@ https://prognote.ru/web-dev/front-end/infinite-slider-in-react-js/  - слайд
 https://ant.design/
 
 "server": "nodemon server.js",
+
+
+Запуск на сервере: //ВАЖНО!!
+npm run build
+yarn global add serve
+npm serve -s build
