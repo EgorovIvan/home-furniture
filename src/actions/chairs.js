@@ -1,5 +1,5 @@
 
-export const setChairs = chairs =>({
+export const setChairs = chairs => ({
     type: 'SET_CHAIR',
     payload: chairs
 });

@@ -1,0 +1,51 @@
+@import "vars";
+@import "mixins";
+
+.cart { //                                                     корзина
+  position: relative;
+  display: flex;
+  padding: 0;
+  align-items: center;
+
+  &__inner {
+    @include font(32px, 38px, 400);
+    padding: 10px 15px;
+
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__total {
+    padding: 10px 20px;
+    @include font(24px, 28px, 700);
+    color: $black-bkg;
+    background-color: $gray;
+    border-radius: 5px;
+  }
+
+  &__link {
+    @extend %title-font-js ;
+    color: $title;
+    line-height: 22px;
+  }
+
+  &__img {
+    padding-right: 15px;
+  }
+
+  &__img img {
+    object-fit: cover;
+    height: 25px;
+  }
+
+  &__shopping {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -52,7 +52,6 @@ function Profile() {
                 </section>
             </main>
         </div>
-
     )
 }
 

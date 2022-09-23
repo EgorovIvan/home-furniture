@@ -6,12 +6,12 @@ import chair from "../images/icon_product/chair.png"
 
 import './scss/style.scss';
 
-function Leftmenu(props) {
+function Leftmenu({closeFormNav}) {
 
     return (
         <div className="leftside-menu">
             <div className="leftside-menu__block">
-                <Button onClick={() => props.setShowMessage(false)} className="leftside-menu__close">
+                <Button onClick={closeFormNav} className="leftside-menu__close">
                     <img src="../images/close.svg" alt={"close"}/>
                 </Button>
             </div>
@@ -55,7 +55,6 @@ function Leftmenu(props) {
             </ul>
         </div>
     )
-
 }
 
 export default Leftmenu;

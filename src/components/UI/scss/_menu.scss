@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixins";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    padding-left: 25px;
+    padding-right: 5px;
+  }
+
+  &__list-link {
+    @extend %title-font-js;
+    color: $title;
+    line-height: 22px;
+  }
+}

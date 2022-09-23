@@ -1,7 +1,6 @@
 const initialState = {
     isReadyBraziers: false,
     items: null,
-
 };
 
 export default (state = initialState, action) => {
@@ -18,7 +17,6 @@ export default (state = initialState, action) => {
                 isReadyBraziers: action.payload
             };
         default:
-
             return state;
     }
 }

@@ -3,8 +3,6 @@ const initialState = {
     sortBy: 'recommendations'
 };
 
-
-
 export default (state = initialState, action) => {
     switch (action.type) {
         case 'SET_QUERY' :

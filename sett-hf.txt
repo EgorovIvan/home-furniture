@@ -56,10 +56,26 @@ npm install sass       не обязательно
 https://prognote.ru/web-dev/front-end/infinite-slider-in-react-js/  - слайды
 https://ant.design/
 
+SERVER
+npm install express mongoose
+npm install -D nodemon concurrently
+npm i config
+npm install bcryptjs
+npm i express-validator
+npm install jsonwebtoken
 "server": "nodemon server.js",
-
 
 Запуск на сервере: //ВАЖНО!!
 npm run build
-yarn global add serve
+npm install -g serve
+//yarn global add serve
 npm serve -s build
+
+
+npm reboot node-sass
+npm install -f node-sass
+npm install gulp-sass --save-dev
+
+npm install node-sass@latest
+
+npm install webpack-dev-server --save-dev  устранение неисправности при запуске npm start

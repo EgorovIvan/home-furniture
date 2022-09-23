@@ -14,7 +14,7 @@ import Profile from "./UI/Profile"
 import Footer from "./UI/Footer";
 import Header from "./../containers/Header";
 import Tables from "./UI/Catalog/Tables/Tables";
-import Room from "./UI/Room"
+import Cart from "./../containers/Cart";
 import axios from 'axios';
 
 
@@ -24,20 +24,21 @@ class App extends Component {
         const {setTables, setChairs, setSwing, setBraziers, setOther} = this.props;
 
         axios.get('/tables.json').then(({data}) => {
-            setTimeout(() => setTables(data), 3000);
+            setTimeout(() => setTables(data), 1000);
         })
         axios.get('/chairs.json').then(({data}) => {
-            setTimeout(() => setChairs(data), 3000);
+            setTimeout(() => setChairs(data), 1000);
         })
         axios.get('/swing.json').then(({data}) => {
-            setTimeout(() => setSwing(data), 3000);
+            setTimeout(() => setSwing(data), 1000);
         })
         axios.get('/braziers.json').then(({data}) => {
-            setTimeout(() => setBraziers(data), 3000);
+            setTimeout(() => setBraziers(data), 1000);
         })
         axios.get('/other.json').then(({data}) => {
-            setTimeout(() => setOther(data), 3000);
+            setTimeout(() => setOther(data), 1000);
         })
+        setTables()
     }
 
     render() {
@@ -85,7 +86,7 @@ class App extends Component {
                     <Route exact path="/payment" component={Payment}/>
                     <Route exact path="/contacts" component={Contacts}/>
                     <Route exact path="/profile" component={Profile}/>
-                    <Route exact path="/room" component={Room}/>
+                    <Route exact path="/cart" component={Cart}/>
                     <Redirect to="/"/>
                 </Switch>
                 <Footer/>

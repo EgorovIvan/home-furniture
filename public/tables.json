@@ -1,17 +1,17 @@
 
 [
   {
-    "id": 0,
+    "id": 100,
     "title": "Кухонный стол №1",
     "size": "120х60х100",
     "material": "дуб",
     "color": "коричневый",
     "image": "/images/catalog/Tables/table_1.jpg",
-    "price": 710,
+    "price": 1210,
     "in_stock": 0
   },
   {
-    "id": 1,
+    "id": 101,
     "title": "Журнальный стол №1",
     "size": "80х60х80",
     "material": "береза",
@@ -21,7 +21,7 @@
     "in_stock": 6
   },
   {
-    "id": 2,
+    "id": 102,
     "title": "Кухонный стол №2",
     "size": "120х60х100",
     "material": "дуб",
@@ -31,17 +31,17 @@
     "in_stock": 4
   },
   {
-    "id": 3,
+    "id": 103,
     "title": "Журнальный стол №2",
     "size": "120х60х100",
     "material": "дуб",
     "color": "Белый",
     "image": "/images/catalog/Tables/table_4.jpg",
-    "price": 741,
+    "price": 1581,
     "in_stock": 3
   },
   {
-    "id": 4,
+    "id": 104,
     "title": "Кухонный стол №3",
     "size": "120х60х100",
     "material": "дуб",
@@ -51,7 +51,7 @@
     "in_stock": 0
   },
   {
-    "id": 5,
+    "id": 105,
     "title": "Журнальный стол №3",
     "size": "80х60х80",
     "material": "береза",
@@ -61,7 +61,7 @@
     "in_stock": 5
   },
   {
-    "id": 6,
+    "id": 106,
     "title": "Кухонный стол №4",
     "size": "120х60х100",
     "material": "дуб",
@@ -71,7 +71,7 @@
     "in_stock": 4
   },
   {
-    "id": 7,
+    "id": 107,
     "title": "Кухонный стол №5",
     "size": "80х60х80",
     "material": "береза",

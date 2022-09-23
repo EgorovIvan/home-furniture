@@ -1,7 +1,6 @@
 const initialState = {
     isReadySwing: false,
     items: null,
-
 };
 
 export default (state = initialState, action) => {

@@ -18,8 +18,6 @@ const ProductSlider = () => {
     };
     return (
         <Slider {...settings}>
-
-
                 <div className="products__slider-item">
                     <a className="products__slider-link" href="/">
                         <img className="products__slider-img" src="./../../images/new_products/1.jpg"

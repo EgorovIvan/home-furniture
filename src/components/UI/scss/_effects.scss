@@ -1,0 +1,85 @@
+@import "vars";
+
+.btn-reg:hover,
+.btn-reg:focus {
+  background-color: $dark-pink;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: $white-bkg;
+}
+
+.btn-reg:disabled {
+  background-color: $white-bkg;
+  cursor: inherit;
+  outline:  1px solid #A4A4A4;
+  border: none;
+  color: $light-gray;
+}
+
+.btn-del,
+.btn-ctr {
+  cursor: pointer;
+  fill: $lightblue;
+}
+
+.icon {
+  cursor: pointer;
+  fill: $lightblue;
+}
+
+.icon-el1 {
+  fill: $white-bkg;
+}
+
+.icon-el2 {
+  fill: $black;
+}
+
+.icon:hover,
+.icon:focus,
+.icon-del:hover .btn-del,
+.icon-del:focus .btn-del{
+  fill: $dark-pink;
+}
+
+.icon-ctr:hover .btn-ctr,
+.icon-ctr:focus .btn-ctr {
+  fill: $green;
+}
+
+.icon:active,
+.icon-ctr:active .btn-ctr,
+.icon-del:active .btn-del {
+  fill: $light-gray;
+}
+
+.st1 {
+  cursor: pointer;
+  fill: $white-bkg;
+}
+
+.icon-svg:hover ,
+.icon-svg:focus {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-svg:active {
+  width: 36px;
+  height: 36px;
+}
+
+.cls-1 {
+  fill:#4489c8;
+}
+
+.cls-2 {
+  fill:#fff;
+}
+
+.fil1 {fill:#FEFEFE}
+.fil0 {fill:#C62326}
+
+.wil0 {fill:#2AB200}
+.wil1 {fill:white}

@@ -1,0 +1,98 @@
+@import "vars";
+@import "mixins";
+
+.footer { //                                                         нижний колонтитул
+  background-color: white;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    @extend %title-font-js;
+    padding: 0 15px;
+  }
+
+  &__info {
+    width: 500px;
+  }
+
+  &__title {
+    color: $title;
+    @extend %title-font-js7;
+    font-size: 32px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    @extend %title-font-js7;
+    color: $title;
+    font-size: 13.7px;
+    margin-left: 1px;
+  }
+
+  &__number {
+    @extend %title-font-js;
+    font-size: 16px;
+    color: $title;
+    margin-left: 1px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__form-input {
+    padding: 6px 10px 6px 18px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid #rgba ($title, 0.7);
+    width: 100%;
+
+    &::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #A1A1A1;
+    }
+  }
+
+  &__form-button {
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 21px;
+    background-color: $title;
+    border: none;
+    color: #FFFFF0;
+    min-width: 160px;
+    cursor: pointer;
+  }
+
+  &__social {
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 0 0 8px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

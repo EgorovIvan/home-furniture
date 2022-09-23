@@ -1,0 +1,82 @@
+@import "vars";
+@import "mixins";
+
+.reg {
+  width: 100%;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 360px;
+
+    @include mobile {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__form-title {
+    @include font(20px, 24px, 400);
+    color: $black-bkg;
+  }
+
+  &__form-input {
+    margin: 16px 0 0 0;
+    padding: 0 0 0 17px;
+    width: 280px;
+    height: 44px;
+    @include font(13px, 16px, 300);
+    box-sizing: border-box;
+    color: #B1B1B1;
+    border: none;
+    outline: 1px solid #A4A4A4;
+  }
+
+  &__form-input::placeholder {
+    @include font(13px, 16px, 300);
+    color: #B1B1B1;
+  }
+
+  &__form-checked {
+    margin: 31px 0 33px 0;
+  }
+
+  &__form-text {
+    width: 360px;
+    height: 16px;
+    margin: 10px 0 0 0;
+    @include font(13px, 16px, 300);
+    color: #F16D7F;
+  }
+
+  &__form-btn {
+    width: 180px;
+    height: 40px;
+    margin: 24px 0 0 0;
+    @include font(14px, 17px, 400);
+    color: $white-bkg;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: none;
+    background-color: $dark-pink;
+  }
+
+  &__form-input:hover,
+  &__form-input:focus {
+    outline: 1px solid $dark-pink;
+    background: white;
+    cursor: pointer;
+  }
+}
+
+

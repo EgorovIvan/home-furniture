@@ -1,0 +1,41 @@
+@import "vars";
+@import "mixins";
+
+.breadcrumbs { //                                              хлебные прошки
+
+  position: relative;
+  z-index: 10;
+  margin-left: 0;
+  background-color: white;
+
+  &__inner {
+    padding: 10px 15px;
+    @include font(16px, 20px, 400);
+  }
+
+  &__links {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 8px;
+    @extend %title-font-js;
+    font-size: 15px;
+    color: $default;
+  }
+
+  &__item::after {
+    content: '/';
+    position: absolute;
+  }
+
+  &__item:last-child::after {
+    display: none;
+  }
+
+  &__link {
+
+  }
+}

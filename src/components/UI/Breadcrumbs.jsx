@@ -15,7 +15,7 @@ const Breadcrumbs = (props) => {
                     <ul className="breadcrumbs__links">
                         <li className="breadcrumbs__item">
                             <NavLink className="breadcrumbs_link" to={"/"}>
-                                Главная
+                                Главная &nbsp;
                             </NavLink>
                         </li>
                         {
@@ -25,11 +25,10 @@ const Breadcrumbs = (props) => {
                                 return (
                                     <li className="breadcrumbs__item" key={i}>
                                         <NavLink className="breadcrumbs_link" to={arr1[i]}>
-                                            {arr2[i]}
+                                            &nbsp;  { arr2[i]} &nbsp;
                                         </NavLink>
                                     </li>
                                 )
-
                             })}
                     </ul>
                 </div>

@@ -13,7 +13,7 @@ const Sort = ({sortBy, setSort, searchQuery, setSearchQuery}) => (
                 <FormControl fullWidth >
                     <InputLabel>Сортировать по</InputLabel>
                     <Select
-                        label="Сортировать по" value={sortBy} onChange={e => setSort(e.target.value)}>
+                        label="Сортировать по" value={sortBy} onChange={(e) => setSort(e.target.value)}>
                         <MenuItem value="recommendations">рекомендации</MenuItem>
                         <MenuItem value="price_increase">возрастанию цены</MenuItem>
                         <MenuItem value="decreasing_prices">убыванию цены</MenuItem>
@@ -31,7 +31,6 @@ const Sort = ({sortBy, setSort, searchQuery, setSearchQuery}) => (
             </MenuItem>
         </div>
     </div>
-
 )
 
 export default Sort

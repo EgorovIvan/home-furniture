@@ -1,0 +1,52 @@
+@import "vars";
+@import "mixins";
+
+.top { //                                                   Main
+  &__inner {
+    padding: 15px;
+    text-align: center;
+    max-height: 500px;
+    position: relative;
+  }
+
+  &__slider {
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  &__slider-img {
+    align-items: center;
+  }
+
+
+  //В проекте:
+
+  //&__slider-info {
+  //  max-width: 645px;
+  //  margin-left: 25px;
+  //}
+
+  //&__slider-title {
+  //  color: $title;
+  //  font-size: 110px;
+  //  line-height: 135px;
+  //  padding-bottom: 26px;
+  //  position: relative;
+  //  @extend %title-font;
+  //
+  //  &::after {
+  //    content: '';
+  //    position: absolute;
+  //    left: 0;
+  //    width: 185px;
+  //    height: 1px;
+  //    background: #6d7278;
+  //    bottom: 0;
+  //  }
+  //}
+  //
+  //&__slider-text {
+  //  max-width: 585px;
+  //}
+}
