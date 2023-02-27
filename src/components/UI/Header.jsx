@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from "react"
 import "./scss/style.scss"
-import "./scss/_global.scss"
 import ListButton from "./ListButton"
 import {NavLink} from "react-router-dom"
 import Login from "./Login"
 import logo from "../images/logo.png"
-import IconCart from "./IconCart"
+import IconCart from "./catalog/IconCart"
 
 
 const Header = ({countProduct}) => {
@@ -18,6 +17,10 @@ const Header = ({countProduct}) => {
 
     const openFormNav = () => setShowFormNav(true)
     const closeFormNav = () => setShowFormNav(false)
+
+    const handleClick = () => {
+          
+    }
 
     useEffect(() => {
         if (countProduct > 0) {
@@ -88,7 +91,7 @@ const Header = ({countProduct}) => {
                         </li>
                         <li className="profile__item">
                             <NavLink className="profile__link link-icon" to={"/cart"}>
-                                <IconCart/>
+                                <IconCart key={999} id={999} handleClick={handleClick} stateCartItem={false}/>
                             </NavLink>
                         </li>
                         <li className="header__cart-count" style={styleCountProduct}>{countProduct}</li>

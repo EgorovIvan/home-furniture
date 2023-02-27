@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className="footer__social">
                             <ul className="footer__list">
                                 <li className="footer__item">
-                                    <a className="footer__link link-icon" href="#">
+                                    <a className="footer__link link-icon" href="https://www.instagram.com/">
                                         <svg className="icon-svg" enableBackground="new 0 0 128 128"
                                              viewBox="0 0 128 128"
                                              width="36" height="36">
@@ -58,7 +58,7 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li className="footer__item">
-                                    <a className="footer__link link-icon" href="#">
+                                    <a className="footer__link link-icon" href="https://www.whatsapp.com/">
                                         <svg className="icon-svg" height="36" style={{
                                             shapeRendering: "geometricPrecision",
                                             textRendering: "geometricPrecision",

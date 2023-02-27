@@ -34,13 +34,17 @@ const Login = (props) => {
             setEmailError('')
         }
     }
+
     const blurHandler = (e) => {
         switch (e.target.name) {
             case 'email':
                 setEmailDirty(true)
+                // break
             case 'password':
                 setPasswordDirty(true)
-                break
+                // break
+            default:
+
         }
     }
 
@@ -113,11 +117,11 @@ const Login = (props) => {
                                 onClick={sendFormReg}>
                             Зарегистрироваться
                         </button>
-                    <button className="reg__form-btn btn-reg"
-                            type='click'
-                            onClick={sendFormReg}>
-                        Зарегистрироваться
-                    </button>
+                    {/*<button className="reg__form-btn btn-reg"*/}
+                    {/*        type='click'*/}
+                    {/*        onClick={sendFormReg}>*/}
+                    {/*    Зарегистрироваться*/}
+                    {/*</button>*/}
                     {/*</form>*/}
                 </div>
             </div>

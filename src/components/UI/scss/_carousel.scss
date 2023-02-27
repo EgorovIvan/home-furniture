@@ -1,0 +1,81 @@
+
+.carousel {
+  position: relative;
+  width: 1170px;
+  height: 100%;
+  margin: 15px;
+  overflow: hidden;
+
+  &__link {
+
+  }
+
+  &__img {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    margin: 11px;
+    opacity: 0.75;
+  }
+
+  &__img:hover {
+    opacity: 1;
+  }
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.pause {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  user-select: none;
+  color: #FFFFFF;
+  opacity: 0.8;
+  background-color: $lightblue;
+  border-radius: 20px;
+}
+
+
+.pause:hover {
+  cursor: pointer;
+  background-color: $green;
+}
+
+.next:hover path,
+.prev:hover path{
+  cursor: pointer;
+  fill: $green;
+}
+
+.pause:active {
+  cursor: pointer;
+  background-color: $dark-pink;
+}
+
+.next:active path,
+.prev:active  path{
+  cursor: pointer;
+  fill: $dark-pink;
+}

@@ -1,30 +1,31 @@
 import React, {Component} from "react";
 import './App.css';
-import {Route, BrowserRouter, Switch, Redirect} from "react-router-dom"
+import {Route, BrowserRouter, Routes} from "react-router-dom"
+import Header from "./../containers/Header";
 import Main from "./UI/Main";
+import Footer from "./UI/Footer";
+import NotFound from "./UI/NotFound";
 import Catalog from "./../containers/Catalog";
-import Chairs from "./UI/Catalog/Chairs/Chairs";
-import Swing from "./UI/Catalog/Swing/Swing";
-import Braziers from "./UI/Catalog/Braziers/Braziers";
-import Other from "./UI/Catalog/Other/Other";
+import Tables from "./UI/catalog/Tables/Tables";
+import Chairs from "./UI/catalog/Chairs/Chairs";
+import Swing from "./UI/catalog/Swing/Swing";
+import Braziers from "./UI/catalog/Braziers/Braziers";
+import Other from "./UI/catalog/Other/Other";
 import Gallery from "./UI/Gallery";
 import Contacts from "./UI/Contacts";
 import Payment from "./UI/Payment";
 import Profile from "./UI/Profile"
-import Footer from "./UI/Footer";
-import Header from "./../containers/Header";
-import Tables from "./UI/Catalog/Tables/Tables";
 import Cart from "./../containers/Cart";
 import axios from 'axios';
 
 
 class App extends Component {
-
     componentDidMount() {
+
         const {setTables, setChairs, setSwing, setBraziers, setOther} = this.props;
 
-        axios.get('/tables.json').then(({data}) => {
-            setTimeout(() => setTables(data), 1000);
+        axios.get('/chairs.json').then(({data}) => {
+            setTimeout(() => setTables(data), 100);
         })
         axios.get('/chairs.json').then(({data}) => {
             setTimeout(() => setChairs(data), 1000);
@@ -38,7 +39,6 @@ class App extends Component {
         axios.get('/other.json').then(({data}) => {
             setTimeout(() => setOther(data), 1000);
         })
-        setTables()
     }
 
     render() {
@@ -47,11 +47,12 @@ class App extends Component {
 
         return (
             <BrowserRouter>
+
                 <Header/>
-                <Switch>
-                    <Route exact path="/" component={Main}/>
+                <Routes>
+                    <Route exact path="/" element={<Main/>}/>
                     <Route exact path="/catalog"
-                           render={() => <Catalog tables={tables}
+                           element={<Catalog tables={tables}
                                                   isReady={isReady}
                                                   chairs={chairs}
                                                   isReadyChairs={isReadyChairs}
@@ -63,32 +64,32 @@ class App extends Component {
                                                   isReadyOther={isReadyOther}/>}
                     />
                     <Route exact path="/catalog/tables"
-                           render={() => <Tables tables={tables}
-                                                 isReady={isReady}/>}
+                           element={<Tables tables={tables}
+                                            isReady={isReady}/>}
                     />
                     <Route exact path="/catalog/chairs"
-                           render={() => <Chairs chairs={chairs}
+                           element={<Chairs chairs={chairs}
                                                  isReadyChairs={isReadyChairs}/>}
                     />
                     <Route exact path="/catalog/swing"
-                           render={() => <Swing swing={swing}
+                           element={<Swing swing={swing}
                                                 isReadySwing={isReadySwing}/>}
                     />
                     <Route exact path="/catalog/braziers"
-                           render={() => <Braziers braziers={braziers}
+                           element={<Braziers braziers={braziers}
                                                    isReadyBraziers={isReadyBraziers}/>}
                     />
                     <Route exact path="/catalog/other"
-                           render={() => <Other other={other}
+                           element={<Other other={other}
                                                 isReadyOther={isReadyOther}/>}
                     />
-                    <Route exact path="/gallery" component={Gallery}/>
-                    <Route exact path="/payment" component={Payment}/>
-                    <Route exact path="/contacts" component={Contacts}/>
-                    <Route exact path="/profile" component={Profile}/>
-                    <Route exact path="/cart" component={Cart}/>
-                    <Redirect to="/"/>
-                </Switch>
+                    <Route exact path="/gallery" element={<Gallery/>}/>
+                    <Route exact path="/contacts" element={<Contacts/>}/>
+                    <Route exact path="/payment" element={<Payment/>}/>
+                    <Route exact path="/profile" element={<Profile/>}/>
+                    <Route exact path="/cart" element={<Cart/>}/>
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
                 <Footer/>
             </BrowserRouter>
         )

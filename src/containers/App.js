@@ -6,9 +6,8 @@ import * as swingActions from "../actions/swing";
 import * as braziersActions from "../actions/braziers";
 import * as otherActions from "../actions/other";
 import * as sortActions from "../actions/sort";
-import App from '../components/App';
+import App from "../components/App";
 import orderBy from "lodash/orderBy";
-
 
 
 const sortByFunc = (state, sortBy) => {

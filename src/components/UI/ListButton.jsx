@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import './scss/style.scss';
-import {Button, Container, ListGroup} from "react-bootstrap";
-import Leftmenu from "./Leftmenu";
+import {Button, Container} from "react-bootstrap";
+import LeftMenu from "./LeftMenu";
 
 const ListButton = (props) => {
     return (
@@ -13,7 +13,7 @@ const ListButton = (props) => {
                     <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"/>
                 </svg>
             </Button>
-            {props.showFormNav && <Leftmenu closeFormNav={props.closeFormNav}/>}
+            {props.showFormNav && <LeftMenu closeFormNav={props.closeFormNav}/>}
         </Container>
     );
 }

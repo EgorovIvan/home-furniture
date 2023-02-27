@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: start;
+    align-items: flex-start;
     width: 360px;
 
     @include mobile {

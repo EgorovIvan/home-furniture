@@ -1,6 +1,6 @@
-import React, {Component, useState} from "react";
+import React, {useState} from "react";
 import Breadcrumbs from "./Breadcrumbs";
-import Zoom from 'react-reveal/Zoom'
+// import Zoom from 'react-reveal/Zoom'
 import "./scss/style.scss";
 import "./scss/_global.scss";
 
@@ -19,7 +19,6 @@ const Gallery = () => {
 
     return (
         <main className="main">
-
             <Breadcrumbs arrBc={arrBc}/>
 
             <div className="container">
@@ -53,84 +52,85 @@ const Gallery = () => {
                                 "bedroom"
                                 :
                                     return <section>
-                                        <Zoom bottom>
-                                            <div className="gallery__items">
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/2.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/1.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/3.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/4.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/5.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/6.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/7.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/8.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/9.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/10.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </Zoom>
+                                        {/*<Zoom bottom>*/}
+                                        <div className="gallery__items">
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/2.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/1.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/3.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/4.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/5.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/6.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/7.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/8.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/9.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/10.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        {/*</Zoom>*/}
                                     </section>
                                 case
                                 "living"
                                 :
                                     return <div>
-                                        <Zoom bottom>
-                                            <div className="gallery__items">
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/6.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/7.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/8.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/9.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/10.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/1.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/2.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/3.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/4.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/5.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </Zoom>
+                                        {/*<Zoom bottom>*/}
+                                        <div className="gallery__items">
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/6.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/7.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/8.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/9.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/10.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/1.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/2.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/3.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/4.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/5.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        {/*</Zoom>*/}
                                     </div>
                                 case
                                 "office"
                                 :
-                                    return <Zoom bottom>
+                                    return <div>
+                                        {/*  <Zoom bottom> */}
                                         <div className="gallery__items">
                                             <a className="gallery__item" href="/">
                                                 <img src="../images/gallery/3.jpg" alt=""/>
@@ -163,86 +163,88 @@ const Gallery = () => {
                                                 <img src="../images/gallery/10.jpg" alt=""/>
                                             </a>
                                         </div>
-                                    </Zoom>
+                                    </div>
 
                                 case
                                 "dining"
                                 :
                                     return <nav>
-                                        <Zoom bottom>
-                                            <div className="gallery__items">
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/4.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/7.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/6.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/9.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/10.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/1.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/2.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/3.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/8.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/5.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </Zoom>
+                                        {/* <Zoom bottom>*/}
+                                        <div className="gallery__items">
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/4.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/7.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/6.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/9.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/10.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/1.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/2.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/3.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/8.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/5.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        {/*</Zoom>*/}
                                     </nav>
                                 case
                                 "chair"
                                 :
                                     return <article>
-                                        <Zoom bottom>
-                                            <div className="gallery__items">
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/8.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/2.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/3.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/1.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/5.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/6.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/7.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/4.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/9.jpg" alt=""/>
-                                                </a>
-                                                <a className="gallery__item" href="/">
-                                                    <img src="../images/gallery/10.jpg" alt=""/>
-                                                </a>
-                                            </div>
-                                        </Zoom>
+                                        {/*<Zoom bottom>*/}
+                                        <div className="gallery__items">
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/8.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/2.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/3.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/1.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/5.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/6.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/7.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/4.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/9.jpg" alt=""/>
+                                            </a>
+                                            <a className="gallery__item" href="/">
+                                                <img src="../images/gallery/10.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        {/*</Zoom>*/}
                                     </article>
+                                default:
+                                    break
                             }
                         })(state)}
                     </div>

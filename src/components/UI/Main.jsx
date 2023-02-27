@@ -1,8 +1,7 @@
 import React from "react"
 import "./scss/style.scss"
-import "./scss/_global.scss"
-import TopSlider from "./Slider/TopSlider";
-import ProductSlider from "./Slider/ProductSlider";
+import TopSlider from "./sliders/TopSlider"
+import ProductSlider from "./sliders/ProductSlider"
 
 function Main() {
 
@@ -24,7 +23,7 @@ function Main() {
                 </section>
             </div>
         </main>
-    );
-};
+    )
+}
 
 export default Main;

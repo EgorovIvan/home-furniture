@@ -6,7 +6,7 @@ export const decFromCart = obj => ({
 export const addToCart = obj => ({
     type: 'ADD_PRODUCT_TO_CART',
     payload: obj,
-    id: obj.id
+    id: obj?.id
 })
 
 export const removeFromCart = id => ({

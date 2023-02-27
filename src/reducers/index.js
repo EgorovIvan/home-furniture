@@ -15,5 +15,5 @@ export default combineReducers({
     braziers,
     other,
     cart,
-    sort
+    sort,
 });

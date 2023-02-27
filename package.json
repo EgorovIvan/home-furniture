@@ -1,62 +1,42 @@
 {
-  "name": "new",
+  "name": "home-furniture",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.0.5",
-    "@mui/material": "^5.1.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.23.0",
-    "bcryptjs": "^2.4.3",
-    "bootstrap": "^5.1.1",
-    "config": "^3.3.7",
-    "css-minify": "^2.0.0",
-    "express": "^4.17.2",
-    "express-validator": "^6.14.0",
-    "jquery": "^3.6.0",
-    "jsonwebtoken": "^8.5.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.3",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "gsap": "^3.11.4",
     "lodash": "^4.17.21",
-    "mongoose": "^6.1.7",
-    "node-sass": "^6.0.1",
+    "node-sass": "^8.0.0",
     "plural-ru": "^2.0.2",
-    "popper.js": "^1.16.1",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.3",
-    "react-dom": "^17.0.2",
-    "react-id-swiper": "^4.0.0",
-    "react-iframe": "^1.8.0",
-    "react-mixitup": "^2.3.0",
-    "react-redux": "^7.2.5",
-    "react-responsive-carousel": "^3.2.21",
-    "react-reveal": "^1.2.2",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "react-slick": "^0.28.1",
-    "react-slideshow-image": "^3.5.1",
-    "react-transition-group": "^4.4.2",
-    "redux": "^4.1.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-iframe": "^1.8.5",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "sass": "^1.39.2",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.4",
+    "redux-thunk": "^2.4.2",
+    "semantic-ui-react": "^2.1.4",
     "slick-carousel": "^1.8.1",
-    "socket.io": "^4.3.1",
-    "socket.io-client": "^4.3.2",
-    "swiper": "^7.0.6",
-    "web-vitals": "^1.0.1"
+    "swiper": "^8.4.5",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -64,7 +44,6 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -78,22 +57,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^6.5.1",
-    "eslint-plugin-react": "^7.30.1",
-    "gulp": "^4.0.2",
-    "mixitup": "^3.3.1",
-    "nodemon": "^2.0.15"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EgorovIvan/home-furniture.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EgorovIvan/home-furniture/issues"
-  },
-  "homepage": "https://github.com/EgorovIvan/home-furniture#readme"
+    "gulp-sass": "^5.1.0"
+  }
 }

@@ -2,21 +2,30 @@
 @import "mixins";
 
 .top { //                                                   Main
+
   &__inner {
-    padding: 15px;
-    text-align: center;
-    max-height: 500px;
-    position: relative;
+
   }
 
   &__slider {
+    position: relative;
     align-items: center;
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 15px;
   }
 
   &__slider-img {
-    align-items: center;
+    position: absolute;
+    width: 1170px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
   }
 
 

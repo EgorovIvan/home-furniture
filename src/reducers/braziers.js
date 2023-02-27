@@ -3,7 +3,7 @@ const initialState = {
     items: null,
 };
 
-export default (state = initialState, action) => {
+const braziersReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_BRAZIER' :
             return {
@@ -20,3 +20,5 @@ export default (state = initialState, action) => {
             return state;
     }
 }
+
+export default braziersReducer

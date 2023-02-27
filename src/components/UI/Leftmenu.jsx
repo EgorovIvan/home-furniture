@@ -6,7 +6,7 @@ import chair from "../images/icon_product/chair.png"
 
 import './scss/style.scss';
 
-function Leftmenu({closeFormNav}) {
+function LeftMenu({closeFormNav}) {
 
     return (
         <div className="leftside-menu">
@@ -57,4 +57,4 @@ function Leftmenu({closeFormNav}) {
     )
 }
 
-export default Leftmenu;
+export default LeftMenu;

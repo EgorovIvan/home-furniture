@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
 import "../scss/style.scss"
 import "../scss/_global.scss"
 import Breadcrumbs from "../Breadcrumbs";
@@ -149,6 +149,7 @@ function Catalog({
                     </div>
                 </div>
             </section>
+            <Outlet />
         </main>
     )
 }

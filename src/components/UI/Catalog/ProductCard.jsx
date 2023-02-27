@@ -1,32 +1,41 @@
-import React from "react";
-import {Card, Image} from "semantic-ui-react";
-import IconCart from "../IconCart"
+import React, {useState} from "react";
+import IconCart from "./IconCart"
 import "../scss/style.scss"
-import "../scss/_global.scss"
 
-const ProductCard = ({id, title, size, material, color, price, image, in_stock,
-                         stateCartItem, addToCart, removeFromCart}) => {
+const ProductCard = ({
+                         id, title, size, material, color, price, image, in_stock,
+                         addToCart, removeFromCart
+                     }) => {
+    const [stateCartItem, setStateCartItem] = useState(false)
 
     const addProduct = () => addToCart({id, title, size, material, color, price, image, in_stock})
     const removeProduct = () => removeFromCart(id)
 
     const handleClick = () => {
         if (!stateCartItem) {
-            addProduct()
+            setStateCartItem(true)
+            try {
+                addProduct()
+            } catch(e) {
+                console.log(`ошибка в reducers: ${e}`)
+            }
         } else {
+            setStateCartItem(false)
             removeProduct()
         }
     }
 
     return (
-        <Card >
-            <div className='product__img' >
-                <Image className='image' src={process.env.PUBLIC_URL + image} wrapped ui={false}/>
-            </div>
+        <div className='product'>
+            <div className='product__item'>
+                <div className='product__img'>
+                    <img className='image' src={process.env.PUBLIC_URL + image} alt='product'/>
+                </div>
 
-            <Card.Content>
+                <hr className='line'/>
+
                 <div className='product__title'>
-                     {title}
+                    {title}
                 </div>
                 <div className='product__text'>
                     Размеры: {size}
@@ -37,23 +46,22 @@ const ProductCard = ({id, title, size, material, color, price, image, in_stock,
                 <div className='product__text'>
                     Цвет: {color}
                 </div>
-            </Card.Content>
-            <Card.Content extra>
                 <div className="product__price">
                     <span className="product__price-text">
                         {Intl.NumberFormat('ru-RU').format(price)} ₽</span>
-                    <IconCart key={id} handleClick={handleClick} stateCartItem={stateCartItem} />
+                    <IconCart key={id} id={id} handleClick={handleClick} stateCartItem={stateCartItem}/>
                 </div>
-            </Card.Content>
-            <button className="product__instock"
-                    // style={{color : (in_stock > 3) ? '$green' :
-                    //         ((in_stock <= 3) && (in_stock > 0)) ? '#ffff00' : '#ff4000'}}
-            >
-                в наличии {in_stock}шт.
-            </button>
-        </Card>
+                <button className="product__instock"
+                        style={{
+                            color: (in_stock > 2) ? '$green' :
+                                ((in_stock <= 2) && (in_stock > 0)) ? '#ffff00' : '#ff4000'
+                        }}
+                >
+                    в наличии {in_stock}шт.
+                </button>
+            </div>
+        </div>
     )
-
 }
 
 export default ProductCard
