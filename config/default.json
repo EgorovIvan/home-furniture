@@ -1,5 +1,0 @@
-{
-  "port": 4000,
-  "jwtSecret": "apap",
-  "mongoUrl": "mongodb+srv://Ivan:Asics1998MDB@cluster0.bswdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-}
