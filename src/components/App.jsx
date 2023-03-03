@@ -49,7 +49,7 @@ class App extends Component {
 
         return (
             <BrowserRouter>
-                <Header/>
+                {/*<Header/>*/}
                 <Routes>
                     <Route exact path="/" element={<Main/>}/>
                     <Route exact path="/login" element={<Login/>}/>
