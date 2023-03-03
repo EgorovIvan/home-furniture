@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import Breadcrumbs from "../Breadcrumbs";
 import "../scss/style.scss"
-import Sort from "../../../../containers/Sort";
-import ProductCard from "../../../../containers/ProductCard";
+import Sort from "../../../containers/Sort";
+import ProductCard from "../../../containers/ProductCard";
 
 const Other = ({other, isReadyOther}) => {
 

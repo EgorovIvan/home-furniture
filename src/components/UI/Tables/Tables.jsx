@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import Breadcrumbs from "../Breadcrumbs"
 import Sort from "../../../containers/Sort";
 import "../scss/style.scss"
-import ProductCard from "../../../../containers/ProductCard";
+import ProductCard from "../../../containers/ProductCard";
 
 const Tables = ({tables, isReady}) => {  //Страница с продукцией столов
 
