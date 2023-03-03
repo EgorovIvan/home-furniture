@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as sortActions from "../actions/sort";
-import Sort from "../components/UI/catalog/Sort";
+import Sort from "../components/UI/Sort";
 
 const mapStateToProps = ({sort}) => ({
     sortBy: sort.sortBy,

@@ -1,22 +1,23 @@
 import React, {useEffect} from "react";
-import Breadcrumbs from "../../Breadcrumbs";
-import "../../scss/style.scss"
-import Sort from "../../../../containers/Sort";
+import Breadcrumbs from "../Breadcrumbs"
+import Sort from "../../../containers/Sort";
+import "../scss/style.scss"
 import ProductCard from "../../../../containers/ProductCard";
 
-function Swing({swing, isReadySwing}) {
+const Tables = ({tables, isReady}) => {  //Страница с продукцией столов
 
-    const arrBc = [["/catalog", "/catalog/swing"], ["Каталог", "Качели"]];
+    const arrBc = [["/catalog", "/catalog/tables"], ["Каталог", "Столы"]];
 
+    //возврат в начало страницы
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     function viewProduct() {
         try {
-            return !isReadySwing
+            return !isReady
                 ? 'Загрузка...'
-                : swing.map((product) => <ProductCard key={product.id}
+                : tables.map((product) => <ProductCard key={product.id}
                                                        {...product} />)
         } catch (error) {
             console.log(error);
@@ -32,13 +33,12 @@ function Swing({swing, isReadySwing}) {
                 <div className="tables">
                     <Sort/>
                     <div className='tables__items'>
-                        {viewProduct()}
+                            {viewProduct()}
                     </div>
                 </div>
             </section>
-
         </main>
     )
 }
 
-export default Swing;
+export default Tables;

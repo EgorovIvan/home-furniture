@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import IconCart from "./IconCart"
-import "../scss/style.scss"
+import "./scss/style.scss"
 
 const ProductCard = ({
                          id, title, size, material, color, price, image, in_stock,

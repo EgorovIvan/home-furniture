@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
-import Breadcrumbs from "../../Breadcrumbs";
-import "../../scss/style.scss"
+import Breadcrumbs from "../Breadcrumbs";
+import "../scss/style.scss"
 import Sort from "../../../../containers/Sort";
 import ProductCard from "../../../../containers/ProductCard";
 
-const Braziers = ({braziers, isReadyBraziers}) => {
+const Other = ({other, isReadyOther}) => {
 
-    const arrBc = [["/catalog", "/catalog/braziers"], ["Каталог", "Мангалы"]];
+    const arrBc = [["/catalog", "/catalog/other"], ["Каталог", "Прочее"]];
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -14,9 +14,9 @@ const Braziers = ({braziers, isReadyBraziers}) => {
 
     function viewProduct() {
         try {
-            return !isReadyBraziers
+            return !isReadyOther
                 ? 'Загрузка...'
-                : braziers.map((product) => <ProductCard key={product.id}
+                : other.map((product) => <ProductCard key={product.id}
                                                        {...product} />)
         } catch (error) {
             console.log(error);
@@ -40,4 +40,4 @@ const Braziers = ({braziers, isReadyBraziers}) => {
     )
 }
 
-export default Braziers;
+export default Other;

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import "./scss/style.scss"
 import {NavLink} from "react-router-dom"
 import logo from "../images/logo.png"
-import IconCart from "./catalog/IconCart"
+import IconCart from "./IconCart"
 import useAuth from "../../hooks/useAuth";
 import {useDispatch} from "react-redux";
 import {logoutThunk} from "../../redux/slice/user";

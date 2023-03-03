@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "../scss/style.scss";
+import "./scss/style.scss";
 
 const IconCart = ({id, handleClick, stateCartItem}) => {
 

@@ -1,8 +1,8 @@
 import React, {useEffect} from "react"
-import Breadcrumbs from "../../Breadcrumbs"
-import ProductCard from "../../../../containers/ProductCard"
-import Sort from "../../../../containers/Sort"
-import "../../scss/style.scss"
+import Breadcrumbs from "../Breadcrumbs"
+import ProductCard from "../../../containers/ProductCard"
+import Sort from "../../../containers/Sort"
+import "../scss/style.scss"
 
 const Chairs = ({chairs, isReadyChairs}) => {
 
