@@ -1,24 +1,24 @@
-import React, {Component} from "react";
-import './App.css';
+import React, {Component} from "react"
+import './App.css'
 import {Route, BrowserRouter, Routes} from "react-router-dom"
-import Header from "./../containers/Header";
-import Main from "./UI/Main";
+import Header from "./../containers/Header"
+import Main from "./UI/Main"
 import Login from "./UI/Login"
 import SignUp from "./UI/SignUp"
-import Footer from "./UI/Footer";
-import NotFound from "./UI/NotFound";
-import Catalog from "./../containers/Catalog";
-import Tables from "./UI/catalog/Tables/Tables";
-import Chairs from "./UI/catalog/Chairs/Chairs";
-import Swing from "./UI/catalog/Swing/Swing";
-import Braziers from "./UI/catalog/Braziers/Braziers";
-import Other from "./UI/catalog/Other/Other";
-import Gallery from "./UI/Gallery";
-import Contacts from "./UI/Contacts";
-import Payment from "./UI/Payment";
+import Footer from "./UI/Footer"
+import NotFound from "./UI/NotFound"
+import Catalog from "./../containers/Catalog"
+import Tables from "./UI/catalog/Tables/Tables.jsx"
+import Chairs from "./UI/catalog/Chairs/Chairs.jsx"
+import Swing from "./UI/catalog/Swing/Swing.jsx"
+import Braziers from "./UI/catalog/Braziers/Braziers.jsx"
+import Other from "./UI/catalog/Other/Other.jsx"
+import Gallery from "./UI/Gallery"
+import Contacts from "./UI/Contacts"
+import Payment from "./UI/Payment"
 import Profile from "./UI/Profile"
-import Cart from "./../containers/Cart";
-import axios from 'axios';
+import Cart from "./../containers/Cart"
+import axios from 'axios'
 
 
 class App extends Component {
