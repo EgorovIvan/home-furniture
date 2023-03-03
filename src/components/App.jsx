@@ -3,6 +3,8 @@ import './App.css';
 import {Route, BrowserRouter, Routes} from "react-router-dom"
 import Header from "./../containers/Header";
 import Main from "./UI/Main";
+import Login from "./UI/Login"
+import SignUp from "./UI/SignUp"
 import Footer from "./UI/Footer";
 import NotFound from "./UI/NotFound";
 import Catalog from "./../containers/Catalog";
@@ -24,7 +26,7 @@ class App extends Component {
 
         const {setTables, setChairs, setSwing, setBraziers, setOther} = this.props;
 
-        axios.get('/chairs.json').then(({data}) => {
+        axios.get('/tables.json').then(({data}) => {
             setTimeout(() => setTables(data), 100);
         })
         axios.get('/chairs.json').then(({data}) => {
@@ -47,10 +49,11 @@ class App extends Component {
 
         return (
             <BrowserRouter>
-
                 <Header/>
                 <Routes>
                     <Route exact path="/" element={<Main/>}/>
+                    <Route exact path="/login" element={<Login/>}/>
+                    <Route exact path="/sign_up" element={<SignUp/>}/>
                     <Route exact path="/catalog"
                            element={<Catalog tables={tables}
                                                   isReady={isReady}

@@ -1,26 +1,27 @@
-import React, {useState} from "react"
-import {Link, NavLink, useNavigate} from "react-router-dom"
-import useAuth from '../../hooks/useAuth'
-import {useDispatch} from 'react-redux'
-import {loginThunk} from "../../redux/slice/user"
+import React, {useEffect, useState} from "react"
+import {Link, Navigate, NavLink} from "react-router-dom"
 import {auth} from "../../services/firebase"
-import InputAdornment from '@mui/material/InputAdornment'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import IconButton from '@mui/material/IconButton'
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
-import Button from '@mui/material/Button'
-import AccountCircle from '@mui/icons-material/AccountCircle'
+import useAuth from '../../hooks/useAuth'
+import {useDispatch} from "react-redux"
+import {createUserThunk, createProfileThunk} from "../../redux/slice/user"
+import OutlinedInput from "@mui/material/OutlinedInput"
+import InputAdornment from "@mui/material/InputAdornment"
+import AccountCircle from "@mui/icons-material/AccountCircle"
+import IconButton from "@mui/material/IconButton"
+import VisibilityOff from "@mui/icons-material/VisibilityOff"
+import Visibility from "@mui/icons-material/Visibility"
+import Button from "@mui/material/Button"
 
 /**
- * Страница авторизации пользователя
+ * Страница регистрации пользователя
  */
-const Login = () => {
+const SignUp = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [showPassword, setShowPassword] = useState(false)
-    const navigate = useNavigate()
     const isAuth = useAuth().isAuth
+    const profileId = useAuth().id
+    const profileEmail = useAuth().email
     const dispatch = useDispatch()
 
     const handlePassChange = (e) => {
@@ -30,25 +31,32 @@ const Login = () => {
         setEmail(e.target.value)
     }
 
-    /* аутентификация */
-    const handleSubmit = (e) => {
+    /* регистрация */
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        dispatch(loginThunk({auth, email, password}))
+        dispatch(createUserThunk({auth, email, password}))
     }
+
+    /* создание профиля */
+    useEffect(() => {
+        const profileData = {
+            id: profileId,
+            email: profileEmail,
+        }
+        dispatch(createProfileThunk({profileData}))
+    }, [profileId])
 
     const handleClickShowPassword = () => {
         setShowPassword(!showPassword)
     }
     const handleMouseDownPassword = (e) => {
-        e.preventDefault()
+        e.preventDefault();
     }
 
     return !isAuth ? (
         <div className="login">
             <form className="login__form" onSubmit={handleSubmit}>
-                <p className="login__text">
-                    Заполните форму ниже, чтобы войти в свою учетную запись.
-                </p>
+                <p className="login__text">Заполните форму ниже, чтобы зарегистрировать новую учетную запись.</p>
                 <div className="login__input">
                     <OutlinedInput
                         id="outlined-size-small"
@@ -99,7 +107,7 @@ const Login = () => {
                     />
                 </div>
                 <div className="login__btns">
-                    <Button variant="contained" type="submit">Авторизоваться</Button>
+                    <Button variant="contained" type="submit">Регистрация</Button>
                     <NavLink to={"/"}>
                         <Button variant="outlined">Выход</Button>
                     </NavLink>
@@ -108,11 +116,12 @@ const Login = () => {
                     style={{width: "100%", margin: "5px 0"}}
                 />
                 <p className="login__text">
-                    У вас нет учетной записи? <Link to="/sign_up">Зарегистрироваться</Link>
+                    У вас уже есть учетная запись? <Link to="/login">Авторизоваться</Link>
                 </p>
             </form>
         </div>
-    ) : navigate(-1)
+    ) : <Navigate to='/'/>
 }
 
-export default Login
+export default SignUp
+

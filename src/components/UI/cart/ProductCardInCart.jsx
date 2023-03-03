@@ -18,20 +18,18 @@ const ProductCardInCart = ({id, title, size, material, color, price, image,
 
     return (
         <div className="container">
-            <div className="product">
-                <div className="product__item">
-                    <img className="product__thumb"
+            <div className="product-cart">
+                    <img className="product-cart__img"
                          src={process.env.PUBLIC_URL + image}
                          alt=""/>
-                </div>
-                <ul className="product__list">
-                    <li className="product__title">{title}</li>
-                    <li className="product__text">Размеры: {size}</li>
-                    <li className="product__text">Материал: {material}</li>
-                    <li className="product__text"> Цвет:{color}</li>
+                <ul className="product-cart__list">
+                    <li className="product-cart__title">{title}</li>
+                    <li className="product-cart__text">Размеры: {size}</li>
+                    <li className="product-cart__text">Материал: {material}</li>
+                    <li className="product-cart__text"> Цвет:{color}</li>
                 </ul>
-                <div className="product__total">
-                    <div className="product__counter">
+                <div className="product-cart__total">
+                    <div className="product-cart__counter">
                         <svg onClick={decItem}
                             className="icon-ctr" width="32px" height="32px" viewBox="0 0 32 32">
                             <g transform="scale(2)">
@@ -48,11 +46,11 @@ const ProductCardInCart = ({id, title, size, material, color, price, image,
                             <path className="st1" d="M103,57H71V25c0-0.6-0.4-1-1-1H58c-0.6,0-1,0.4-1,1v32H25c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h32v32  c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V71h32c0.6,0,1-0.4,1-1V58C104,57.4,103.6,57,103,57z"/>
                         </svg>
                     </div>
-                    <div className="product__price-text">
+                    <div className="product-cart__price-text">
                         {Intl.NumberFormat('ru-RU').format(count * price)}
                     </div>
                 </div>
-                <div className="product__delete" onClick={deleteProduct}>
+                <div className="product-cart__delete" onClick={deleteProduct}>
                     <svg className="icon-del"
                          viewBox="0 0 128 128"
                          width="32px" height="32px"

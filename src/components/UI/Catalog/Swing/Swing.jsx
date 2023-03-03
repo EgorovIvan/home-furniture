@@ -1,9 +1,7 @@
 import React, {useEffect} from "react";
 import Breadcrumbs from "../../Breadcrumbs";
 import "../../scss/style.scss"
-import "../../scss/_global.scss"
 import Sort from "../../../../containers/Sort";
-import {Card} from "semantic-ui-react";
 import ProductCard from "../../../../containers/ProductCard";
 
 function Swing({swing, isReadySwing}) {
@@ -14,6 +12,17 @@ function Swing({swing, isReadySwing}) {
         window.scrollTo(0, 0)
     }, [])
 
+    function viewProduct() {
+        try {
+            return !isReadySwing
+                ? 'Загрузка...'
+                : swing.map((product) => <ProductCard key={product.id}
+                                                       {...product} />)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <main className="main">
 
@@ -22,12 +31,9 @@ function Swing({swing, isReadySwing}) {
             <section className="container">
                 <div className="tables">
                     <Sort/>
-                    <Card.Group itemsPerRow={4}>
-                        {!isReadySwing
-                            ? 'Загрузка...'
-                            : swing.map((product) => <ProductCard key={product.id} {...product} />)
-                        }
-                    </Card.Group>
+                    <div className='tables__items'>
+                        {viewProduct()}
+                    </div>
                 </div>
             </section>
 

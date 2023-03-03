@@ -16,7 +16,9 @@
 @import "login";
 @import "media";
 @import "menu";
+@import "filter";
 @import 'products';
+@import "profile";
 @import 'reg';
 @import 'tables';
 @import "top";
@@ -27,26 +29,6 @@
   color: #ADD8E6;
   background-color: #ADD8E6;
   height: 1px;
-}
-
-.profile {
-
-  &__list {
-    display: flex;
-  }
-
-  &__item {
-    margin: 7px 0 0 24px;
-  }
-
-  &__link {
-    border: none;
-    background-color: transparent;
-
-    @include mobile {
-      display: none;
-    }
-  }
 }
 
 .alert-enter {
@@ -87,20 +69,6 @@
   }
 }
 
-.filter {
-  display: flex;
-  width: 1200px;
-  border-color: #35C0ED;
-
-  &__sort { //                                             сортировка
-    max-width: 200px;
-    margin: 0 auto 20px 0;
-  }
-
-  &__search { //                                             поиск
-    margin: 15px 15px 20px auto;
-  }
-}
 
 
 

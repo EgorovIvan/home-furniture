@@ -7,6 +7,7 @@ import braziers from "./braziers";
 import other from "./other";
 import cart from "./cart";
 import sort from "./sort";
+import {userReducers} from '../redux/slice/user'
 
 export default combineReducers({
     tables,
@@ -16,4 +17,5 @@ export default combineReducers({
     other,
     cart,
     sort,
+    userReducers: userReducers
 });

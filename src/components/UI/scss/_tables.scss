@@ -3,13 +3,21 @@
 
 .tables { //                                                 столы
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
   padding: 15px 15px;
+
 
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px 35px;
-    padding: 30px 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    //padding: 30px 30px;
   }
 
   &__desc {

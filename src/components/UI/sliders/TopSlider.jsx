@@ -6,8 +6,6 @@ const TopSlider = () => {
     const [indexShow, setIndexShow] = useState(0)
     const [opacity, setOpacity] = useState(0)
 
-    const scene = document.getElementsByClassName('top__slider-img')
-
     let elem = document.querySelectorAll('.top__slider-img')
 
     function anime(i) {
@@ -15,10 +13,15 @@ const TopSlider = () => {
             setTimeout(() => {
                 let sum = +(opacity + 0.02).toFixed(2)
                 setOpacity(sum)
-                indexShow !== (elem?.length - 1) ?
-                    scene[i + 1].style.opacity = opacity :
-                    scene[0].style.opacity = opacity
-                scene[i].style.opacity = 1 - opacity
+                try {
+                    indexShow !== (elem.length - 1) ?
+                        elem[i + 1].style.opacity = opacity :
+                        elem[0].style.opacity = opacity
+                    elem[i].style.opacity = 1 - opacity
+                } catch (e) {
+                    console.log(e)
+                }
+
             }, 200)
         } else {
             setOpacity(0)

@@ -1,42 +1,43 @@
-@import "vars";
 @import "mixins";
 
-.login { //                                     окно регистрации
+.login {
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  z-index: 15;
-  width: 100%;
-  height: 460px;
-  max-width: 380px;
-  background-color: white;
-  padding-top: 40px;
-  box-shadow: -2px 3px 17px #000;
-  transition: all .5s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(60deg, $lightblue, $block2);
+  @include font(18px, 21px, 400);
+  z-index: 10;
 
-  &__block {
-    position: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px auto;
+    width: 100%;
   }
 
-  &__close {
-    background-color: transparent;
-    cursor: pointer;
-    position: absolute;
+  &__btn {
+    width: 75px;
+    height: 40px;
+    border-radius: 6px;
     border: none;
-    right: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:active {
-
-    }
+    background-color: $lightblue;
   }
 
-  &__list {
-    display: block;
-    margin-left: 50px;
-    margin-top: 80px;
+  &__btns {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__input, &__btns, &__text {
+    width: 290px;
+    margin: 5px 10px;
   }
 }

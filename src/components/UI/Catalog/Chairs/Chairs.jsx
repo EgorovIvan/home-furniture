@@ -3,8 +3,6 @@ import Breadcrumbs from "../../Breadcrumbs"
 import ProductCard from "../../../../containers/ProductCard";
 import Sort from "../../../../containers/Sort";
 import "../../scss/style.scss"
-import "../../scss/_global.scss"
-import {Card} from "semantic-ui-react"
 
 const Chairs = ({chairs, isReadyChairs}) => {
 
@@ -14,6 +12,17 @@ const Chairs = ({chairs, isReadyChairs}) => {
         window.scrollTo(0, 0)
     }, [])
 
+    function viewProduct() {
+        try {
+            return !isReadyChairs
+                ? 'Загрузка...'
+                : chairs.map((product) => <ProductCard key={product.id}
+                                                       {...product} />)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <main className="main">
 
@@ -22,12 +31,9 @@ const Chairs = ({chairs, isReadyChairs}) => {
             <section className="container">
                 <div className="tables">
                     <Sort/>
-                    <Card.Group itemsPerRow={4}>
-                        {!isReadyChairs
-                            ? 'Загрузка...'
-                            : chairs.map((product) => <ProductCard key={product.id} {...product} />)
-                        }
-                    </Card.Group>
+                    <div className='tables__items'>
+                        {viewProduct()}
+                    </div>
                 </div>
             </section>
         </main>
