@@ -1,8 +1,6 @@
 import React, {useState} from "react";
-import Breadcrumbs from "./Breadcrumbs";
-// import Zoom from 'react-reveal/Zoom'
-import "./scss/style.scss";
-import "./scss/_global.scss";
+import Breadcrumbs from "./Breadcrumbs"
+import "./scss/style.scss"
 
 
 const Gallery = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import {NavLink, Outlet} from "react-router-dom";
 import "./scss/style.scss"
-import "../scss/_global.scss"
 import Breadcrumbs from "./Breadcrumbs";
 
 

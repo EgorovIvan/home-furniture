@@ -1,7 +1,6 @@
-import React from "react";
-import {Box, InputLabel, FormControl, MenuItem, Select, Input} from "@mui/material";
+import React from "react"
+import {Box, InputLabel, FormControl, MenuItem, Select, Input} from "@mui/material"
 import "./scss/style.scss"
-import "../scss/_global.scss"
 
 const Sort = ({sortBy, setSort, searchQuery, setSearchQuery}) => (
     <div className='filter'>

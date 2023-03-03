@@ -3,7 +3,6 @@ import {NavLink} from "react-router-dom"
 import TextField from "@mui/material/TextField"
 import Button from '@mui/material/Button';
 import './scss/style.scss'
-import "./scss/_global.scss"
 
 
 function Profile() {
