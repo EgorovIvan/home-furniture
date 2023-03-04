@@ -37,10 +37,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +62,9 @@
     ]
   },
   "devDependencies": {
-    "gulp-sass": "^5.1.0"
+    "express": "^4.18.2",
+    "express-favicon": "^2.0.4",
+    "gulp-sass": "^5.1.0",
+    "path": "^0.12.7"
   }
 }
